@@ -1,6 +1,6 @@
-@keyframes webspace {
-	from { background-position: right 0px top 0px; }
-	to { background-position: right -64px top 64px; }
+@keyframes scrolling {
+	from { transform: translate(0px, 0px); }
+	to { transform: translate(64px, 64px); }
 }
 		
 @font-face {
@@ -13,14 +13,24 @@ body {
 
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-
-	background-image: url("./res/web-space.png");
-	background-size: 64px;
-	animation: webspace 2s linear 0s infinite;
 }
 
 ::-webkit-scrollbar {
 	display: none;
+}
+
+.scroll-bg {
+  position: fixed;
+  z-index: -999;
+  
+  top: -64px;
+  left: -64px;
+  width: calc(100vw + 64px);
+  height: calc(100vh + 64px);
+  
+  background-image: url("./res/web-space.png");
+  background-size: 64px;
+  animation: scrolling 2s linear 0s infinite;
 }
 
 header {
