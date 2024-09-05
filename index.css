@@ -1,0 +1,38 @@
+@keyframes webspace {
+	from { background-position: right 0px top 0px; }
+	to { background-position: right -64px top 64px; }
+}
+		
+@font-face {
+	font-family: "Janyk";
+	src: url("./res/Janyk.ttf") format("truetype"); 
+}
+		
+body {
+	margin: 0;
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
+	background-image: url("./res/web-space.png");
+	background-size: 64px;
+	animation: webspace 2s linear 0s infinite;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+header {
+	height: 100vh;
+	
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+svg {
+	font-family: "Janyk";
+	viewbox: 0 0 10 10;
+}
