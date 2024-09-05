@@ -20,17 +20,17 @@ body {
 }
 
 .scroll-bg {
-  position: fixed;
-  z-index: -999;
+	position: fixed;
+	z-index: -999;
   
-  top: -64px;
-  left: -64px;
-  width: calc(100vw + 64px);
-  height: calc(100vh + 64px);
+	top: -64px;
+	left: -64px;
+	width: calc(100vw + 64px);
+	height: calc(100vh + 64px);
   
-  background-image: url("./res/web-space.png");
-  background-size: 64px;
-  animation: scrolling 2s linear 0s infinite;
+	background-image: url("./res/web-space.png");
+	background-size: 64px;
+	animation: scrolling 2s linear 0s infinite;
 }
 
 header {
